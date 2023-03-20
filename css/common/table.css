@@ -1,0 +1,24 @@
+table {
+    width: 95%;
+    height: 100px;
+}
+
+tr>th,tr>td{ 
+    border-bottom: 1px solid #ddd;
+    padding: 0 8px;
+}
+
+th {
+    height: 20px;
+    font-size: 20px;
+}
+
+td {
+    height: 40px;
+    font-size: 16px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+}

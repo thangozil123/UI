@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/common/button.css">
+    <link rel="stylesheet" href="../css/common/input.css">
+    <link rel="stylesheet" href="../css/layout/qlsv.css">
+    <link rel="stylesheet" href="../css/common/table.css">
+</head>
+<body>    
+    <div class="head-wrapper">
+        <div class="content-wrapper">Quản lý sinh viên</div>
+    </div>
+
+    <div class="body-content">   
+        <div class="left-content">
+            <div class="content-header">
+                <div style="font-weight: bold; font-size: 30px"  class="content-title">Thêm sinh viên</div>
+            </div>
+            <label style="font-size: 17px">1. Họ và tên</label>
+            <div class="filter-header">
+                <input type="text" id="name" class="icon ms-input" placeholder="Nhập họ và tên">                
+            </div>
+            <label style="font-size: 17px">2. Giới tính</label>
+            <div class="filter-header">
+                <input type="text" id="gender" class="ms-input" placeholder="Nhập giới tính">                
+            </div>
+            <label style="font-size: 17px">3. Tuổi</label>
+            <div class="filter-header">
+                <input type="text" id="age" class="ms-input" placeholder="Nhập tuổi">                
+            </div>
+            <label style="font-size: 17px">4. Địa chỉ</label>
+            <div class="filter-header">
+                <input type="text" id="address" class="ms-input" placeholder="Nhập địa chỉ">                
+            </div>
+            <label style="font-size: 17px">5. Email</label>
+            <div class="filter-header">
+                <input type="text" id="email" class="ms-input" placeholder="Nhập email">                
+            </div>
+            <div class="ms-button">
+                <button class="ms-btn1" id ="btnSave">Save</button>
+                <button class="ms-btn2" id ="btnUpdate">Update</button>
+            </div>            
+        </div>
+        
+        <div class="right-content" id="student-list">
+            <div class="top-content">
+                <div style="font-weight: bold; font-size: 30px"  class="content-title">Danh sách sinh viên</div>
+            </div>
+            
+            <table class="list" style="margin-top: 16px" id="list" >
+                <thead >
+                    <tr>
+                        <th>Họ và tên</th>
+                        <th>Giới tính</th>
+                        <th>Địa chỉ</th>
+                        <th>Tuổi</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="student"></tbody>
+            </table>           
+        </div>    
+    </div>
+    
+
+    <script src ="../js/student.js"></script>
+    
+</body>
+</html>
+ 
